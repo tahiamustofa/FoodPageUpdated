@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- swipper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon       -->
+    <script
+      src="https://kit.fontawesome.com/9710cf8566.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="m-0 p-0 box-border roboto-slab">
+    <!-- nav  -->
+    <header
+      class="container bg-white roboto-slab min-h-[60px] py-3 relative tracking-wide z-50 px-4 md:px-10 shadow-md shadow-yellow-500 mx-auto rounded-full"
+    >
+      <div class="flex flex-wrap items-center max-xl:gap-y-6 max-sm:gap-x-4">
+        <a
+          href="javascript:void(0)"
+          class="text-3xl md:text-4xl font-bold text-[#1b6cfc] tracking-wide"
+        >
+          <img src="img/Frame 1.png" alt="" />
+        </a>
+
+        <div
+          id="collapseMenu"
+          class="max-lg:hidden lg:!flex lg:items-center max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50"
+        >
+          <button
+            id="toggleClose"
+            class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 fill-black"
+              viewBox="0 0 320.591 320.591"
+            >
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"
+              ></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </button>
+
+          <ul
+            class="lg:flex lg:gap-x-10 lg:absolute lg:left-1/2 lg:-translate-x-1/2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:px-10 max-lg:py-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+          >
+            <li class="mb-6 hidden max-lg:block">
+              <a
+                href="javascript:void(0)"
+                class="text-3xl md:text-4xl font-bold text-[#1b6cfc] tracking-wide"
+              >
+                <img src="img/Frame 1.png" alt="" />
+              </a>
+            </li>
+
+            <li class="flex flex-shrink max-lg:border-b max-xl:py-3">
+              <a
+                href="javascript:void(0)"
+                class="text-[#090b0e] hover:bg-[#fecb16] rounded-full px-2 py-1 hover:text-[#ff422e] text-lg block font-semibold"
+              >
+                Why Us ?</a
+              >
+            </li>
+            <li class="flex flex-shrink max-lg:border-b max-xl:py-3">
+              <a
+                href="javascript:void(0)"
+                class="text-[#090b0e] hover:bg-[#fecb16] rounded-full px-2 py-1 hover:text-[#ff422e] text-lg block font-semibold"
+              >
+                Services</a
+              >
+            </li>
+            <li class="flex flex-shrink max-lg:border-b max-xl:py-3">
+              <a
+                href="javascript:void(0)"
+                class="text-[#090b0e] hover:bg-[#fecb16] rounded-full px-2 py-1 hover:text-[#ff422e] text-lg block font-semibold"
+              >
+                Menu</a
+              >
+            </li>
+            <li class="flex flex-shrink max-lg:border-b max-xl:py-3">
+              <a
+                href="javascript:void(0)"
+                class="text-[#090b0e] hover:bg-[#fecb16] rounded-full px-2 py-1 hover:text-[#ff422e] text-lg block font-semibold"
+              >
+                Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center ml-auto space-x-8">
+          <div>
+            <img
+              src="img/solar_cart-outline.png"
+              alt=""
+              class="bg-[#ff422e] p-1 rounded-full"
+            />
+          </div>
+
+          <button id="toggleOpen" class="lg:hidden">
+            <svg
+              class="w-7 h-7"
+              fill="#000"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- banner -->
+      <div
+        class="container mx-auto roboto-slab flex gap-12 md:gap-10 flex-col lg:flex-row justify-between items-center px-4 md:px-10 md:py-10 my-5 lg:my-5 md:my-0 md:mb-5 bg-white relative"
+      >
+        <div
+          class="absolute xl:top-28 lg:top-6 left-8 w-28 h-28 bg-[#ff422e40] bg-opacity-25 bg-gradient-to-tl rounded-full shadow-2xl"
+        ></div>
+        <div
+          class="absolute md:top-20 md:right-[49%] right-9 top-10 w-16 h-16 bg-[#ff422e40] bg-opacity-25 bg-gradient-to-tl rounded-full shadow-2xl"
+        ></div>
+
+        <div
+          class="absolute bottom-2 right-[26%] w-28 h-28 bg-[#ff422e40] bg-opacity-25 bg-gradient-to-tl rounded-full"
+        ></div>
+
+        <div
+          class="absolute xl:top-2/3 xl:left-[38%] lg:left-1/2 lg:top-2/3 md:right-10 md:top-72 top-48 right-3 w-20 h-20 bg-gradient-to-b from-[#faf55d] to-[#fecb16] rounded-full shadow-2xl"
+        >
+          <img
+            src="img/fruit4.png"
+            class="rounded-full flex justify-center items-center"
+            alt=""
+          />
+        </div>
+        <div class="absolute -bottom-16 right-0">
+          <img src="img/Group 6.png" alt="" />
+        </div>
+
+        <!-- slider box  -->
+        <!-- xl:top-12 xl:right-5 lg:right-3 lg:top-5  -->
+        <div
+          class="absolute flex items-center bg-white rounded-lg shadow-xl p-3 xl:max-w-[12%] lg:max-w-40 max-w-40 md:right-9 md:bottom-[44%] bottom-[40%] right-1 z-20"
+        >
+          <!-- Image  -->
+          <div class="rounded-lg overflow-hidden flex-1">
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="img/Rectangle 44.png"
+                alt="Spicy Shrimp Fried Rice"
+                class="w-10/12"
+              />
+              <!-- Cart Icon -->
+              <div
+                class="absolute -bottom-1 right-0 -left-2 flex rounded-full p-2 justify-between items-center"
+              >
+                <div class="text-left">
+                  <h3 class="text-white text-[10px]">
+                    Spicy Shrimp Fried Rice
+                  </h3>
+                  <p class="text-white font-semibold text-[10px] mt-2">
+                    IDR 24K
+                  </p>
+                </div>
+                <div class="absolute bottom-2 right-4">
+                  <svg
+                    width="12"
+                    height="12"
+                    class="bg-white rounded-full p-1"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                      fill="#FF422E"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Content -->
+          </div>
+
+          <!-- Text and Rating -->
+          <div class="flex-1 flex flex-col space-y-2">
+            <div class="text-sm font-semibold text-gray-800">Best Seller</div>
+            <div class="flex items-center space-x-1 text-yellow-500">
+              <!-- Star Icon (using Heroicons) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.293h5.547c.969 0 1.371 1.24.588 1.81l-4.39 3.204 1.715 5.293c.3.921-.755 1.688-1.54 1.107l-4.39-3.204-4.39 3.204c-.784.581-1.838-.186-1.54-1.107l1.715-5.293-4.39-3.204c-.783-.57-.38-1.81.588-1.81h5.547L9.049 2.927z"
+                />
+              </svg>
+              <span class="text-sm font-medium text-gray-800">4.8</span>
+            </div>
+          </div>
+        </div>
+        <!--  Order button-->
+        <!-- lg:bottom-12 lg:right-[30%] xl:bottom-20  -->
+        <div
+          class="absolute left-1 bottom-10 md:bottom-20 md:left-16 z-20 flex items-center bg-white text-black rounded-full px-5 py-1 shadow-2xl justify-between gap-3"
+        >
+          <div
+            class="flex items-center bg-[#ff422e] text-black rounded-full p-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7 p-1 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </div>
+          <div class="text-sm font-semibold">
+            Order <br />
+            Complete
+          </div>
+        </div>
+
+        <!-- main content  -->
+        <div class="space-y-4 z-10">
+          <h1 class="lg:text-6xl md:text-3xl text-lg font-extrabold max-w-lg">
+            Various <span class="text-[#FF422E]">Cuisines</span> & Different
+            <span class="text-[#FF422E]">Tastes </span>
+          </h1>
+          <p class="font-medium max-w-lg">
+            Enjoy typical Indonesian dishes cooked with quality spices to create
+            a unique taste that you have never tasted
+          </p>
+          <button
+            class="flex gap-1 uppercase px-4 py-2 bg-gradient-to-r from-[#ff422e] to-[#fecb16] text-white rounded-xl font-medium"
+          >
+            Order Now
+          </button>
+
+          <div class="flex flex-col sm:flex-row gap-2">
+            <!-- Google Play Button -->
+            <div class="w-1/2 md:w-1/3">
+              <a
+                href="https://play.google.com/store"
+                target="_blank"
+                class="flex gap-2 items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800"
+              >
+                <div>
+                  <i class="fa-brands fa-google-play"></i>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-xs">Get it on </span>
+                  <div>Google Play</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- App Store Button -->
+            <div class="w-1/2 md:w-1/3">
+              <a
+                href="https://apps.apple.com"
+                target="_blank"
+                class="flex gap-2 items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  viewBox="0 0 384 512"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M318.7 268c-.2-58.4 47.7-86.4 49.8-87.8-27.2-39.7-69.4-45-84.5-45-35.8-3.6-69.9 21-88.1 21-18.2 0-46.4-20.5-76.2-19.9-39 0-75.1 23-95.1 58-40.8 71.1-10.4 176 29.2 233.4 19.4 28.1 42.5 59.6 72.8 58.4 29.4-1.2 40.7-18.9 76.4-18.9 35.7 0 45.5 18.9 76.3 18.4 31.7-.5 51.7-28.8 70.9-57.1 22.4-32.7 31.7-64.5 32.1-66.2-.7-.3-62.2-23.8-62.5-94.6zM261.1 85.3c16.2-19.6 27.1-47 24.2-74.3-23.4.9-51.7 15.7-68.4 35.3-15 17.3-28.2 45.2-24.7 71.5 26.3 2 52.8-13.2 68.9-32.5z"
+                  />
+                </svg>
+
+                <div class="flex flex-col">
+                  <span class="text-xs">Download on the </span>
+                  <div>App Store</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="relative z-10 lg:w-[40%] w-4/5 shadow-lg rounded-full">
+          <img src="img/hero.png" alt="" class="rounded-full" />
+        </div>
+      </div>
+      <!-- after banner  -->
+      <div
+        class="container sell mx-auto roboto-slab lg:my-16 md:my-5 my-1 pt-4 sm:pt-0 md:mb-11 mb-4 box-border content-center flex justify-center overflow-x-clip"
+      >
+        <div class="relative mx-auto flex justify-center items-center">
+          <img
+            src="img/Vector 1.png"
+            alt=""
+            class="mx-auto md:w-full w-[90%]"
+          />
+          <div
+            class="absolute xl:-left-20 xl:top-14 lg:left-0 lg:top-4 left-0 md:-top-10 top-5"
+          >
+            <img src="img/image 1.png" alt="" class="w-1/3 md:w-full" />
+          </div>
+          <div
+            class="absolute xl:left-[30%] xl:top-40 lg:top-24 lg:left-[42%] md:left-[52%] md:bottom-3 hidden md:block lg:space-y-8 md:space-y-2"
+          >
+            <h3
+              class="xl:text-4xl text-2xl font-bold text-white lg:text-left text-center xl:max-w-sm md:max-w-72"
+            >
+              Great food and lots of discounted prices
+            </h3>
+            <div
+              class="flex items-center xl:gap-4 gap-2 lg:flex-row flex-col justify-start"
+            >
+              <!-- Profile images with a "+" overlay -->
+              <div class="flex -space-x-2">
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-white"
+                  src="img/Ellipse 11.png"
+                  alt="User 1"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-white"
+                  src="img/Ellipse 11.png"
+                  alt="User 2"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-white"
+                  src="img/Ellipse 11.png"
+                  alt="User 3"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-white"
+                  src="img/Ellipse 11.png"
+                  alt="User 2"
+                />
+                <img
+                  class="w-10 h-10 rounded-full border-2 border-white"
+                  src="img/Ellipse 11.png"
+                  alt="User 3"
+                />
+              </div>
+
+              <!-- Rating -->
+              <div
+                class="text-white font-semibold rounded-lg p-4 flex flex-col items-center justify-center space-x-2"
+              >
+                <span class="font-bold text-lg">Our Happy Customer</span>
+                <div class="flex items-center gap-1">
+                  <svg
+                    class="w-7 h-7 text-yellow-400 mr-1"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 17.27l5.18 3.73-1.64-6.36 5.18-4.09h-6.4L12 2.77l-2.32 7.78H3.28l5.18 4.09L6.82 21z"
+                    />
+                  </svg>
+                  <span class="font-bold text-lg">4.8</span>
+                  <span class="text-base">(1,9k Review)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="absolute w-20 h-20 xl:top-4 xl:right-[28%] lg:-top-2 lg:right-32 bg-white bg-gradient-to-tl rounded-full"
+            ></div>
+            <!-- border  -->
+            <div
+              class="border-l-8 border-dotted border-white absolute xl:right-[31%] lg:right-40 top-[17%] h-80"
+            ></div>
+
+            <div
+              class="absolute -bottom-4 xl:right-[28%] lg:right-[12%] w-20 h-20 bg-white bg-gradient-to-tl rounded-full"
+            ></div>
+          </div>
+          <div
+            class="absolute xl:right-5 lg:top-40 lg:right-6 md:right-0 md:top-28 top-12 right-5"
+          >
+            <div
+              class="text-white font-bold xl:text-9xl lg:text-5xl md:text-4xl text-2xl px-4 py-2 rounded-t-lg"
+            >
+              70%
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slider  -->
+      <section
+        class="container mx-auto roboto-slab lg:my-16 my-0 px-4 md:px-10"
+      >
+        <div class="xl:pb-2 lg:pt-0 md:pt-5 pb-0 mb-0">
+          <h1 class="lg:text-4xl text-2xl font-extrabold max-w-lg px-5">
+            Favorite
+            <span class="text-[#FF422E]">Order</span>
+          </h1>
+        </div>
+        <!--  space-between="2"  -->
+
+        <div class="swiper mySwiper sm:px-2 md:px-2 lg:px-6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44 (1).png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44 (2).png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44.png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/4food.png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44.png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44.png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="rounded-lg overflow-hidden shadow-lg">
+                <!-- Image -->
+                <div class="relative">
+                  <img
+                    src="img/Rectangle 44.png"
+                    alt="Spicy Shrimp Fried Rice"
+                    class="w-full"
+                  />
+                  <!-- Cart Icon -->
+                  <div
+                    class="absolute bottom-7 right-0 left-0 flex rounded-full p-2 justify-between items-center"
+                  >
+                    <div class="text-left max-w-32">
+                      <h3 class="text-white text-base">
+                        Spicy Shrimp Fried Rice
+                      </h3>
+                      <p class="text-white font-semibold text-md mt-2">
+                        IDR 24K
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        width="26"
+                        height="26"
+                        class="bg-white rounded-full p-1"
+                        viewBox="0 0 26 26"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.17922 3.66667C9.47789 3.03733 10.1211 2.6 10.8667 2.6H15.1334C15.8779 2.6 16.5211 3.03733 16.8208 3.66667C17.5494 3.67307 18.1179 3.70613 18.6256 3.90453C19.2317 4.14162 19.7589 4.54455 20.1467 5.0672C20.5382 5.59307 20.7216 6.26933 20.9744 7.1984L21.0139 7.34347L21.6432 9.65493C22.0632 9.86605 22.4312 10.1677 22.7206 10.5381C23.384 11.3883 23.5014 12.4005 23.384 13.5611C23.2688 14.6875 22.9147 16.1061 22.471 17.8821L22.4422 17.9941C22.1616 19.1173 21.9334 20.0293 21.6635 20.7408C21.3798 21.4832 21.0214 22.0912 20.4294 22.5531C19.8384 23.0149 19.1611 23.2144 18.3728 23.3104C17.6166 23.4 16.6768 23.4 15.5195 23.4H10.4806C9.32322 23.4 8.38242 23.4 7.62722 23.3093C6.83789 23.2155 6.16162 23.0149 5.56962 22.552C4.97869 22.0912 4.62029 21.4832 4.33655 20.7408C4.06562 20.0293 3.83842 19.1173 3.55789 17.9941L3.52909 17.8821C3.08535 16.1061 2.73016 14.6875 2.61602 13.5621C2.49869 12.3995 2.61602 11.3883 3.27842 10.5381C3.58029 10.152 3.94189 9.86613 4.35575 9.65493L4.98509 7.34347L5.02562 7.1984C5.27842 6.26933 5.46189 5.59307 5.85335 5.06613C6.24133 4.54387 6.76844 4.14133 7.37442 3.90453C7.88215 3.70613 8.44962 3.672 9.17922 3.66667ZM9.18029 5.2688C8.47415 5.27627 8.19149 5.30293 7.95682 5.39467C7.63038 5.52233 7.34649 5.73932 7.13762 6.0208C6.94989 6.2736 6.83895 6.62667 6.52962 7.7648L6.15202 9.14827C7.25922 9 8.68855 9 10.4635 9H15.5355C17.3115 9 18.7408 9 19.847 9.14827L19.4704 7.7648C19.16 6.62667 19.0502 6.2736 18.8624 6.0208C18.6536 5.73932 18.3697 5.52233 18.0432 5.39467C17.8086 5.30293 17.5248 5.27627 16.8187 5.2688C16.6671 5.58737 16.4283 5.85646 16.13 6.04487C15.8317 6.23328 15.4862 6.3333 15.1334 6.33333H10.8667C10.5139 6.3333 10.1683 6.23328 9.87003 6.04487C9.57174 5.85646 9.33296 5.58737 9.18135 5.2688H9.18029ZM10.8667 4.2C10.796 4.2 10.7281 4.2281 10.6781 4.27811C10.6281 4.32812 10.6 4.39594 10.6 4.46667C10.6 4.53739 10.6281 4.60522 10.6781 4.65523C10.7281 4.70524 10.796 4.73333 10.8667 4.73333H15.1334C15.2041 4.73333 15.2719 4.70524 15.3219 4.65523C15.3719 4.60522 15.4 4.53739 15.4 4.46667C15.4 4.39594 15.3719 4.32812 15.3219 4.27811C15.2719 4.2281 15.2041 4.2 15.1334 4.2H10.8667ZM6.28002 10.7451C5.30935 10.8859 4.83895 11.1419 4.54136 11.5237C4.24269 11.9045 4.10935 12.4219 4.20855 13.3989C4.30989 14.3973 4.63522 15.7029 5.09815 17.5589C5.39469 18.7408 5.59949 19.56 5.83415 20.1723C6.05815 20.7632 6.27895 21.0757 6.55629 21.2923C6.83255 21.5077 7.18882 21.6453 7.81816 21.7211C8.46882 21.7989 9.31149 21.8 10.5318 21.8H15.4704C16.6896 21.8 17.5344 21.7989 18.184 21.7211C18.8134 21.6464 19.1696 21.5077 19.4459 21.2923C19.7232 21.0757 19.943 20.7632 20.1691 20.1723C20.4016 19.56 20.6075 18.7408 20.903 17.5589C21.367 15.7029 21.6923 14.3973 21.7926 13.3989C21.8928 12.4219 21.7584 11.9035 21.4608 11.5227C21.1632 11.1419 20.6928 10.8859 19.7211 10.7451C18.7291 10.6021 17.383 10.6 15.4704 10.6H10.5318C8.61922 10.6 7.27309 10.6021 6.28109 10.7451H6.28002Z"
+                          fill="#FF422E"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Content -->
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- swipper  -->
+      </section>
+      <script type="module">
+        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+        // Initialize Swiper
+        const swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10, // space between slides
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: 4, // default slides per view for larger devices
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            // When the window width is >= 320px
+            320: {
+              slidesPerView: 1, // 1 slide per view on small devices
+            },
+            // When the window width is >= 640px
+            640: {
+              slidesPerView: 2, // 2 slides per view on medium devices
+            },
+            700: {
+              slidesPerView: 3, // 3 slides per view on medium devices
+            },
+            // When the window width is >= 1024px
+            1024: {
+              slidesPerView: 4, // 3 slides per view on larger devices
+            },
+          },
+        });
+        console.log(swiper);
+      </script>
+
+      <!-- deliver  -->
+      <section class="container mx-auto w-full my-16 px-4 md:px-10">
+        <div
+          class="flex items-center justify-between flex-col-reverse md:flex-row gap-20"
+        >
+          <div>
+            <img src="img/Group 13.png" alt="" />
+          </div>
+          <div class="space-y-3 max-w-lg">
+            <h1 class="text-4xl font-extrabold max-w-lg">
+              Your order is delivered
+              <span class="text-[#FF422E]">quickly</span>
+            </h1>
+            <p>Enjoy your food in a warm state will increase appetite</p>
+
+            <!-- Responsive grid container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+              <div
+                class="flex flex-col md:flex-row items-center gap-2 md:gap-2 lg:gap-9 shade-card bg-[#fff] px-5 py-8 shadow-lg max-w-lg"
+              >
+                <div>
+                  <img class="w-[100%]" src="img/Frame 18.png" alt="" />
+                </div>
+                <div class="space-y-3 text-center md:text-left">
+                  <h2 class="text-2xl font-bold">Order from anywhere</h2>
+                  <p class="text-base">
+                    Order food anywhere easily via smartphone
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row items-center gap-2 md:gap-2 lg:gap-9 shade-card bg-[#fff] px-5 py-8 shadow-lg max-w-lg"
+              >
+                <div>
+                  <img class="w-[100%]" src="img/Frame 17.png" alt="" />
+                </div>
+                <div class="space-y-3 text-center md:text-left">
+                  <h2 class="text-2xl font-bold">Order from anywhere</h2>
+                  <p class="text-base">
+                    Order food anywhere easily via smartphone
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col md:flex-row items-center gap-2 md:gap-2 lg:gap-9 shade-card bg-[#fff] px-5 py-8 shadow-lg max-w-lg"
+              >
+                <div>
+                  <img class="w-[100%]" src="img/Frame 19.png" alt="" />
+                </div>
+                <div class="space-y-3 text-center md:text-left">
+                  <h2 class="text-2xl font-bold">Order from anywhere</h2>
+                  <p class="text-base">
+                    Order food anywhere easily via smartphone
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- discount  -->
+      <section class="container roboto-slab card mx-auto lg:my-16 md:my-8 my-4">
+        <div class="text-white md:h-auto md:w-full w-[100%] h-[98%]">
+          <figure>
+            <img alt="daisy" src="img/Group 11.png" class="shadow-lg w-full" />
+          </figure>
+
+          <div
+            class="flex flex-col justify-center items-center absolute card-body text-center text-white space-y-0 md:space-y-3 lg:top-10 md:top-5 xl:right-[25%] lg:right-[16%] md:right-[18%] -top-4 right-3 mx-auto"
+          >
+            <div class="mx-auto flex flex-col justify-center items-center">
+              <h1
+                class="text-xs md:text-2xl lg:text-4xl xl:text-6xl font-extrabold max-w-3xl"
+              >
+                Register and get discount up to 70 %
+              </h1>
+              <!-- form    -->
+              <div class="container mx-auto px-4 md:py-8 py-2">
+                <div class="flex items-center">
+                  <input
+                    type="text"
+                    class="w-full px-4 py-2 text-[#ff422e] border border-gray-300 rounded-l-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    value="Submit"
+                    class="px-4 py-2 bg-gradient-to-tr from-[#ff422e] to-[#fecb16] text-white font-bold rounded-r-lg hover:bg-red-600"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- choose  -->
+      <section
+        class="container roboto-slab px-4 md:p-10 mx-auto bg-[#f0999040] bg-opacity-25 lg:my-16 md:my-8"
+      >
+        <div class="flex gap-3 flex-col items-center p-5">
+          <h1 class="text-2xl md:text-5xl font-extrabold">Why Choose Us</h1>
+          <p class="px-3 md:px-5 lg:px-72 text-center">
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
+        </div>
+
+        <!-- startmain -->
+        <div class="grid gap-10 lg:gap-5 grid-cols-1 lg:grid-cols-3 mt-12">
+          <div class="flex flex-col items-center space-y-16 p-5">
+            <div class="flex gap-5 items-start">
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-solid fa-address-card bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-[#121212;]">Dedicated Team</h5>
+                <div class="flex my-1">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-regular fa-heart bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-[#121212;]">Dedicated Team</h5>
+                <div class="flex my-1">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 items-start">
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-solid fa-gift bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+              <div>
+                <h5 class="font-bold text-[#121212;]">Dedicated Team</h5>
+                <div class="flex my-1">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <img src="img/whychoose1.png" class="mx-auto" alt="" />
+          </div>
+          <div class="space-y-16 flex flex-col items-center text-right p-5">
+            <div class="flex gap-5 items-start">
+              <div>
+                <h5 class="font-bold text-[#121212;] text-right">
+                  Dedicated Team
+                </h5>
+                <div class="flex my-1 justify-end">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p class="text-right">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-solid fa-boxes-packing bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div>
+                <h5 class="font-bold text-[#121212;] text-right">
+                  Dedicated Team
+                </h5>
+                <div class="flex my-1 justify-end">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p class="text-right">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-regular fa-thumbs-up bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+            </div>
+            <div class="flex gap-5 items-start">
+              <div>
+                <h5 class="font-bold text-[#121212;] text-right">
+                  Dedicated Team
+                </h5>
+                <div class="flex my-1 justify-end">
+                  <hr class="w-1/2" />
+                </div>
+
+                <p class="text-right">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div class="rounded-full mt-1">
+                <i
+                  class="fa-solid fa-ice-cream bg-[#dfdddd] text-2xl rounded-full px-3 py-2"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="roboto-slab tracking-wide bg-[#414141] px-8 md:px-10 py-12">
+      <div
+        class="container mx-auto roboto-slab grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10"
+      >
+        <div class="space-y-4">
+          <a href="javascript:void(0)"
+            ><img src="img/footer.png" alt="logo" class="w-44"
+          /></a>
+          <p class="text-white max-w-48">
+            MADESU is an online food purchasing platform and has a professional
+            partner in Indonesian food
+          </p>
+          <ul class="mt-10 flex space-x-5">
+            <li>
+              <a href="javascript:void(0)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="fill-gray-300 hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7v-7h-2v-3h2V8.5A3.5 3.5 0 0 1 15.5 5H18v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="fill-gray-300 hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="fill-gray-300 hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="fill-gray-300 hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold text-lg relative max-sm:cursor-pointer"
+          >
+            Company<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16px"
+              height="16px"
+              class="sm:hidden absolute right-0 top-1 fill-[#d6d6d6]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                data-name="16"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </h4>
+
+          <ul class="mt-6 space-y-5">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Support</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold text-lg relative max-sm:cursor-pointer"
+          >
+            Outlet
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16px"
+              height="16px"
+              class="sm:hidden absolute right-0 top-1 fill-[#d6d6d6]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                data-name="16"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </h4>
+          <ul class="space-y-5 mt-6">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Jakarta</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Surabaya</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Bandung</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="hover:text-white text-gray-300 text-sm"
+                >Yogyakarta</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold text-lg relative max-sm:cursor-pointer"
+          >
+            Partner
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16px"
+              height="16px"
+              class="sm:hidden absolute right-0 top-1 fill-[#d6d6d6]"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+                data-name="16"
+                data-original="#000000"
+              ></path>
+            </svg>
+          </h4>
+          <div class="flex">
+            <ul class="space-y-5 mt-6">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-white text-gray-300 text-sm"
+                >
+                  <img src="img/image 9.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-white text-gray-300 text-sm"
+                >
+                  <img src="img/image 7.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-white text-gray-300 text-sm"
+                >
+                  <img src="img/image 11.png" alt="" />
+                </a>
+              </li>
+            </ul>
+            <ul class="space-y-8 mt-6">
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-white text-gray-300 text-sm"
+                >
+                  <img src="img/image 8.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0)"
+                  class="hover:text-white text-gray-300 text-sm"
+                >
+                  <img src="img/image 10.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-10 border-gray-400" />
+
+      <div class="container mx-auto flex flex-wrap max-md:flex-col gap-4">
+        <ul class="md:flex md:space-x-6 max-md:space-y-2">
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="hover:text-white text-gray-300 text-sm"
+              >Terms of Service</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="hover:text-white text-gray-300 text-sm"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="hover:text-white text-gray-300 text-sm"
+              >Security</a
+            >
+          </li>
+        </ul>
+
+        <p class="text-gray-300 text-sm md:ml-auto">
+          © tahiaMustofa All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- nav js  -->
+    <script src="nav.js"></script>
+  </body>
+</html>
